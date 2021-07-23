@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/main.css")
+        link(rel="stylesheet", href="/css/product.css")
+        title Add Product 
+    body
+        header.main-header
+            nav.main-header_nav
+                ul.main-header_item
+                    li.main-header_item-list 
+                        a(href="/") Shop
+                    li.main-header_item-list 
+                        a.active(href="/add-product") Product
+                    li.main-header_item-list 
+                        a(href="/page-not-found") About
+
+        div.box
+        main.main
+            form.product-form(action="/product" method="POST")
+                div.form-control
+                    label(for="firstname") Firstname
+                    input(type="text"  name="firstname" id="firstname")
+                    label(for="lastname") Lastname
+                    input(type="text"  name="lastname" id="firstname")
+            
+            
+                button.btn(type="submit") Add Product
+        

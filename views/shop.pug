@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/main.css")
+        title #{DOCTitle}
+    body
+        header.main-header
+            nav.main-header_nav
+                ul.main-header_item
+                    li.main-header_item-list 
+                        a.active(href="/") Shop
+                    li.main-header_item-list 
+                        a(href="/add-product") Product
+                    li.main-header_item-list 
+                        a(href="/page-not-found") About
+        main.main
+            each product in prods
+                h1 Add a product
+
+                p #{product.firstname} #{product.lastname}
+
+ 
+    
