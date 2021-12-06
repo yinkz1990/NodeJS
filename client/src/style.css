@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.App {
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.bg-overlay{
+	  width: 100%;
+    height: 800px;
+    background: linear-gradient(0deg, rgba(0, 9, 242, 0.4), rgba(0, 9, 242, 0.4)), url("./img/restuarant.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.text-link{
+text-decoration: none;
+color: white;
+}
+
+.text-link:hover{
+  color:aquamarine;
+}
+.reservation{
+  margin-top: 0px;
+  height: 55em;
+  background: linear-gradient(0deg, rgba(187, 189, 235, 0.4), rgba(0, 9, 242, 0.6)), url("./utils/img/backgroundimage2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color:blue;
+  justify-content: center;
+}
+.product-list-item{        
+  flex: 1 0 30%;
+  height: 280px;
+  max-width: 200px;
+  background-color:white;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: 2em;
+  
+}
+.product-list-item:hover{
+  z-index: 1;
+  box-shadow:  2px 3px 2px 2px white;
+}
+img{  
+  width: 200px; 
+  height: 185px;
+  display: block; /* remove extra space below image */
+  border-radius: 5px;
+}
+.productDetails{
+  background-color:rgb(245, 244, 244);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-list-details{
+  margin-top: 10px;
+  margin-left: 5px;
+  color: black;
+}
+.reservation-list{
+  width: 100%;
+  height: 800px;
+  margin-top: 1.5em;
+  background-color:white;
+  
+}
+.reservation-table{
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.reservation-table th,td{
+  padding:10px 5px;
+}
+
+.success{
+  color: rgb(1, 48, 1);
+  margin-top: 2em;
+  text-align: center;
+  font-size: 20px;
+}
+.error{
+  color: rgb(204, 0, 0);
+  margin-top: 2em;
+  text-align: center;
+  font-size: 20px;
+}
+.single-product{
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;
+  
+}
+
+.footer{
+  background-color:rgb(111, 111, 226);
+  max-width: 100%;
+  height: 160px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  color: white;
+  line-height: 20px;
+}
+.footer-sm{
+  display: none;
+}
+
+.first-section{
+  width: 100%;
+  height: 40%;
+  background-color:rgb(96, 96, 179);
+  display: flex;
+  justify-content: space-between;
+}
+.menu{
+  margin-top: 2em;
+  margin-left: 10px;
+  flex-basis: 15%;
+  }
+  
+ .menu-two{
+  margin-top: 2em;
+  flex-basis: 15%;
+  }
+
+.image-slider{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  flex-basis: 60%;
+  margin-top: 2em;
+  margin: 10px;
+}
+
+.menu-item{
+  width: 10em;
+  background-color:ghostwhite;
+  padding: 5px 5px 5px 5px;
+ 
+}
+
+.menu-list-1 a{
+  display: flex;
+  justify-content: center;
+}
+.menu-item a{
+  text-decoration: none;
+  padding: 5px 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+}
+.menu-item a:hover{
+  box-shadow: 2px 2px 5px;
+  color: red;
+  z-index: 1;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.pagination-content{
+  display: flex;
+  justify-content: center;
+
+}
+
+.pagination-item{
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+.pg-link{
+  background-color: aqua;
+  padding: 5px;
+  color: blue;
+}
+.section-1{
+  width:100%;
+  height: 500px;
+  background-color: aliceblue;
+  display:flex;
+  justify-content: center;
+  
+}
+.about-image{
+  flex-basis: 50%;
+  height: 350px;
+  margin-left: 50px;
+  margin-top: 3em;
+}
+.about-image-2{
+  flex-basis: 50%;
+  height: 350px;
+  margin-right: 50px;
+  margin-top: 3em;
+}
+.about-image img, .about-image-2 img{
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+.about-text{
+  flex-basis: 50%;
+  margin-right: 50px;
+  margin-top: 3em;
+
+}
+.about-text-2{
+  flex-basis: 50%;
+  margin-left: 50px;
+  margin-top: 3em;
+
+}
+.about-text p{
+  margin-left: 3em;
+  margin-right: 4em;
+  margin-top: 2em;
+  position: relative;
+  animation-name: contents;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+@keyframes contents {
+  0% {right: -1000px;}
+  60% {right: 50px;}
+  70%{right: -50px }
+  75%{right: 30px}
+  80% {right: -30px;}
+  85%{right:20px}
+  90%{right: -20px}
+  95%{right: 10px}
+  100% {right:0}
+  
+}
+.about-text-2 p{
+  margin-left: 6em;
+  margin-right: 2em;
+  margin-top: 2em;
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {left: -1000px;}
+  60% {left: 50px;}
+  70%{left: -50px }
+  75%{left: 30px}
+  80% {left: -30px;}
+  85%{left:20px}
+  90%{left: -20px}
+  95%{left: 10px}
+  100% {left:0}
+  
+}
+@media screen and (max-width:680px) {
+  .menu, .menu-two{
+  display: none;
+  }
+.image-slider{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  z-index: 0;
+}
+.footer-sm{
+  display: flex;
+}
+.footer-lg{
+  display: none;
+}
+}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+td, th { 
+  padding: 6px; 
+  border: 1px solid rgb(2, 22, 6); 
+  text-align: left; 
+}
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid rgb(5, 5, 5); }
+
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid rgb(237, 241, 238); 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+    input[type=text], input[type=date]{
+        display: block;
+        width: 10em;
+        margin-top: 4px;
+    }
+  
+  .upcoming td:nth-of-type(1):before { content: "Name";}
+	.upcoming td:nth-of-type(2):before { content: "Email"; }
+	.upcoming td:nth-of-type(3):before { content: "Phone Number"; }
+	.upcoming td:nth-of-type(4):before { content: "Guests"; }
+	.upcoming td:nth-of-type(5):before { content: "Time"; }
+	.upcoming td:nth-of-type(6):before { content: "Date"; }
+  .upcoming td:nth-of-type(7):before { content: "Cancel"; }
+  .upcoming td:nth-of-type(8):before { content: "Done"; }
+	
+
+
+
+  .history td:nth-of-type(1):before { content: "Name";}
+	.history td:nth-of-type(2):before { content: "Email"; }
+	.history td:nth-of-type(3):before { content: "Phone Number"; }
+	.history td:nth-of-type(4):before { content: "Guests"; }
+	.history td:nth-of-type(5):before { content: "Time"; }
+	.history td:nth-of-type(6):before { content: "Date"; }
+  .history td:nth-of-type(7):before { content: "Done"; }
+	
+}

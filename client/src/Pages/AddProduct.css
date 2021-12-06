@@ -1,0 +1,47 @@
+
+.addproduct{
+    background:linear-gradient(0deg, rgba(0, 9, 242, 0.4), rgba(0, 9, 242, 0.4)), url("../utils/img/backgroundimage3.jpg");
+    
+}
+
+.product{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.product-form{
+    width: 80%;
+    margin-top: 20px;
+    height: 500px;
+    margin-top: 30px;
+      
+}
+
+input[type=text], input[type=number],input[type=file]{
+    padding: 5px 20px;
+    width: 300px;
+    border: 2px solid green;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+label{
+    display: block;
+    color: beige;
+
+}
+
+.submit-button{
+    padding: 5px;
+    color: aliceblue;
+    background-color: red;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}

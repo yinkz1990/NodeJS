@@ -1,21 +1,22 @@
 {
-  "name": "nodejs",
+  "name": "restuarant",
   "version": "1.0.0",
-  "description": "Course of Node",
-  "main": "App.js",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "handlebars": "^4.7.7",
-    "pug": "^3.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon App.js"
+    "client":"npm start --prefix client",
+    
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Olayinka",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinkz1990/NodeJs.git"
+  },
+  "author": "Idumu Olayinka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yinkz1990/NodeJs/issues"
+  },
+  "homepage": "https://github.com/yinkz1990/NodeJs#readme"
 }

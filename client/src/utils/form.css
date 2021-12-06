@@ -1,0 +1,31 @@
+.centered{
+   font-size: 24;
+   margin: 40px auto 2em;
+   width: 70%;
+   color: white;
+   display: flex;
+   justify-content: center;   
+
+}
+.form{
+    width: 70%;
+    height: 80%;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name, .schedule{
+    display: flex;
+    column-gap: 30px;
+}
+input[type=text], input[type=tel],input[type=Date]{
+    padding: 5px 20px;
+    border: 2px solid green;
+    margin-top: 10px;
+    display: block;
+}
+input[type=radio], input[type=checkbox]{
+    border: 2px solid green;
+    margin-top: 10px;
+}
