@@ -3,7 +3,7 @@ import React from "react";
 
 function About (){
     return(
-        <div>
+        <div className="about">
             <div className="section-1">
                 
                 <div className="about-image">

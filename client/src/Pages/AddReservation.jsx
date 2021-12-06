@@ -9,11 +9,20 @@ function AddReservation (props) {
        lastname : "",
        email : "",
        guest : "",
+       phone : "",
        date : "",
        time: "",
        color: "",
 
    })
+
+   function handleChange (e) {
+    const {name, type, value} = e.target;
+    setState({
+        [name]: value
+    })
+      
+   }
 const {postReservation, errors, successmsg} = props;
    
     return(
@@ -22,7 +31,7 @@ const {postReservation, errors, successmsg} = props;
             <h1 style={{textAlign:"center", color:"white", paddingTop:"2em"}}>Resevation form </h1>
             <hr/>
             {successmsg ? <h4 className="success">{successmsg}</h4>:<h4 className="error">{errors}</h4> }
-            <Form state={formstate} handleSubmit={postReservation} />
+            <Form state={formstate} handleSubmit={postReservation} handleChange ={handleChange} />
         </div>
         </div>
     )

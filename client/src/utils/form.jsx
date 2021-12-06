@@ -13,13 +13,13 @@ return(
                     </div>
                     <div>
                         <label htmlFor = "lastname">Lastname:</label>
-                        <input type="text" value={props.state.Lastname} name="lastname" onChange ={props.handleChange} placeholder="lastname"/>
+                        <input type="text" value={props.state.lastname} name="lastname" onChange ={props.handleChange} placeholder="lastname"/>
                     </div>
                 </div>
                <div style ={{display:"grid", marginTop:"10px"}}>
                     <div style={{marginBottom:"20px"}}>
                         <label htmlFor = "email">Email: </label>
-                        <input style = {{width:"300px"}} type="text" value={props.state.email} name="email" onChange ={props.handleChange} placeholder="xxx@gmail.com"/>
+                        <input style = {{width:"20em"}} type="text" value={props.state.email} name="email" onChange ={props.handleChange} placeholder="xxx@gmail.com"/>
                     </div>
                 
                     <div style={{marginBottom:"20px"}}>
