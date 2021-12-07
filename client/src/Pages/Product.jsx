@@ -28,9 +28,9 @@ const queryPage = +params.get("page");
                   <Link to={{ pathname:'/productdetails', state:{ value: product._id } }} style={{ textDecoration: 'none' }}>
                   <img src={`http://localhost:8000/${product.imageUrl}`} alt="my image" />
                   <div className="product-list-details">
-                    <h2>{product.productName}</h2>
-                    <h3>&#8358;{product.price}</h3>
-                    <h3>{product.cuisine}</h3>
+                    <h3 style={{marginBottom:"3px"}}>{product.productName}</h3>
+                    <h4 style={{marginBottom:"3px"}}>&#8358;{product.price}</h4>
+                    <h4>{product.cuisine}</h4>
                    </div>
                   </Link>
                 </div>               

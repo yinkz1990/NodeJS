@@ -10,7 +10,7 @@ mongoose.connection.on("error", (err)=> {
 })
 
 async function mongooseConnection () {
-     await mongoose.connect("mongodb+srv://Olayinka:idumu_1990@cluster0.axjfq.mongodb.net/Restaurant?retryWrites=true&w=majority",{
+     await mongoose.connect(`mongodb+srv://${process.env.database_connection}`,{
             useNewUrlParser: true,
             useUnifiedTopology: true
      })
