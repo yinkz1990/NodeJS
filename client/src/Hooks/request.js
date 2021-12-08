@@ -3,13 +3,13 @@ import axios from "axios";
 const API_URL = "http://localhost:8000";
 
 const getHttpProduct = async (page) =>{
-    const result = await axios.get(`${API_URL}/product?page=${page}`);
+    const result = await axios.get(`/api/product?page=${page}`);
     return result;
 }
 
 const postHttpProduct = async (product) => {
     try{
-    return await axios.post(`${API_URL}/product`, product);
+    return await axios.post(`/api/product`, product);
     }catch{
         return {
             statusText : false
@@ -21,7 +21,7 @@ const postHttpProduct = async (product) => {
 
 const deleteHttpProduct =  async (id) => {
     try{
-        return await axios.delete(`${API_URL}/product/${id}`)
+        return await axios.delete(`/api/product/${id}`)
 
     }catch{
         
@@ -35,13 +35,13 @@ const deleteHttpProduct =  async (id) => {
 
 
 const getHttpReservation = async () => {
-    const reservation = await axios.get(`${API_URL}/reservation`);
+    const reservation = await axios.get(`/api/reservation`);
     return reservation;
 }
 
 const postHttpReservation = async (reservation) => {
      try{
-         return await axios.post(`${API_URL}/reservation`, reservation)
+         return await axios.post(`/api/reservation`, reservation)
      }catch(error){
         return error;
      }
@@ -53,7 +53,7 @@ const postHttpReservation = async (reservation) => {
 const completeHttpReservation = async (id) => {
     try{
 
-        return await axios.put(`${API_URL}/reservation/${id}`)
+        return await axios.put(`/api/reservation/${id}`)
     }catch{
        return{
            statusText: false
@@ -63,7 +63,7 @@ const completeHttpReservation = async (id) => {
 
 const abortHttpReservation = async (id) => {
     try {
-        return await axios.delete(`${API_URL}/reservation/${id}`)
+        return await axios.delete(`/api/reservation/${id}`)
     } catch (error) {
         return {
             statusText: false
@@ -72,7 +72,7 @@ const abortHttpReservation = async (id) => {
 }
 
 const getHttpSingleProduct = async(id) => {
-    const response = await axios.get(`${API_URL}/product/${id}`);
+    const response = await axios.get(`/api/product/${id}`);
     return response;
 }
 

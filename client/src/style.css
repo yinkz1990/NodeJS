@@ -133,6 +133,9 @@ img{
 }
 .footer-sm{
   display: none;
+  font-size: 14px;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 .first-section{
@@ -354,7 +357,7 @@ td, th {
 .single-product img{
   width: 200px;
   height: 200px;
-  margin-left: 20px;
+  
 }
 }
 
